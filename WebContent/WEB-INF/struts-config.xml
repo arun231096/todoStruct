@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ 
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+    <form-beans>
+        <form-bean type="com.struct.example.model.HelloWorldForm" name="helloWorld"></form-bean>
+    </form-beans>
+    <action-mappings>
+        <action name="helloWorld" path="/"
+        type="com.struct.example.controller.IndexController" >
+                <forward name="index" path="/index.jsp" />
+        </action>
+    </action-mappings>
+</struts-config>
