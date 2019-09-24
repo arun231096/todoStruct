@@ -5,12 +5,11 @@
           "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
 <struts-config>
     <form-beans>
-        <form-bean type="com.struct.example.model.HelloWorldForm" name="helloWorld"></form-bean>
     </form-beans>
     <action-mappings>
-        <action name="helloWorld" path="/"
-        type="com.struct.example.controller.IndexController" >
-                <forward name="index" path="/index.jsp" />
+        <action path="/"
+        type="com.struct.todo.app.controller.ToDoAction" >
+                <forward name="success" path="/index.jsp" />
         </action>
     </action-mappings>
 </struts-config>
