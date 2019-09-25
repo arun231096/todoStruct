@@ -16,7 +16,7 @@
                 <div class="col-sm-6 form">
                     <div class="row">
                         <div class="col-sm-12" align="left">
-                            <h1>Login</h1>
+                            <h1>ToDo Login</h1>
                         </div>
                     </div>
                     <html:form action="/Login">

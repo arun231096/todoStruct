@@ -11,6 +11,10 @@
     <body>
         <div style="color:red">
             <h1>Invalid user name  <bean:write name="LoginForm" property="userName"></bean:write></h1>
+            <script type="text/javascript">
+               alert("invalid username or password");
+               window.location = "login.jsp";
+            </script>
         </div>
     </body>
 </html>

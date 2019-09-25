@@ -1,6 +1,6 @@
 package com.struct.todo.app.controller;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,9 +22,8 @@ public class ToDoAction extends Action{
     public ActionForward execute(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response) {
     	List<ToDoFrom> formList = new LinkedList<ToDoFrom>();
-    	formList.add(new ToDoFrom(1,"AML","Technical Task",2,new Date(), new Date(), true));
-    	formList.add(new ToDoFrom(1,"Base60AML","Technical Task",2,new Date(), new Date(), true));
-    	System.out.println(request.getSession().getAttribute("user"));
+    	formList.add(new ToDoFrom("1","AML","Technical Task","2",Date.valueOf("2019-09-25").toString(), Date.valueOf("2019-09-25").toString(), "completed"));
+    	formList.add(new ToDoFrom("2","Base60AML","Technical Task","3",Date.valueOf("2019-09-25").toString(), Date.valueOf("2019-09-25").toString(), "not completed"));
     	request.setAttribute("formlist", formList);
     	if(formList.isEmpty()) {
     		return mapping.findForward(FAILURE);

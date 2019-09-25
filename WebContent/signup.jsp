@@ -16,7 +16,7 @@
                 <div class="col-sm-6 form">
                     <div class="row">
                         <div class="col-sm-12" align="left">
-                            <h1>SignUp</h1>
+                            <h1>ToDo SignUp</h1>
                         </div>
                     </div>
                     <html:form action="/signup">
