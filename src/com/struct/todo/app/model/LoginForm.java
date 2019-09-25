@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package com.struct.todo.app;
+package com.struct.todo.app.model;
 
 public class LoginForm extends org.apache.struts.action.ActionForm {
     
