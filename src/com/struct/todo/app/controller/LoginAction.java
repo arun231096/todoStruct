@@ -6,6 +6,7 @@ package com.struct.todo.app.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
@@ -28,6 +29,10 @@ public class LoginAction extends Action {
             throws Exception {
         LoginForm loginForm = (LoginForm) form;
         if (loginForm.getUserName().equals(loginForm.getPassword())) {
+        	HttpSession session = request.getSession();
+        	loginForm.setId(10);
+        	session.setAttribute("user", loginForm.getUserName());
+        	session.setAttribute("id", loginForm.getId());
             return mapping.findForward(SUCCESS);
         } else {
             return mapping.findForward(FAILURE);

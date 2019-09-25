@@ -10,9 +10,12 @@
 </head>
 <body>
     <logic:iterate name="formlist" id="todo">
-        <p>
-            List Users <bean:write name="todo" property="title"/> <br>
-        </p>
+            <bean:write name="todo" property="title"/> 
+            <bean:write name="todo" property="message"/>  
+            <bean:write name="todo" property="message" /> 
+            <bean:write name="todo" property="message"/> 
+            <bean:write name="todo" property="message"/>  
+            <bean:write name="todo" property="message"/><br>
     </logic:iterate>
 </body>
 </html>

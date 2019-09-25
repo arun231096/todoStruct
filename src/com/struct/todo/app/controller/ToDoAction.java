@@ -19,11 +19,12 @@ public class ToDoAction extends Action{
 	private final static String SUCCESS = "success";
     private final static String FAILURE = "failure";
     
-    public ActionForward getToDoList(ActionMapping mapping, ActionForm form,
+    public ActionForward execute(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response) {
     	List<ToDoFrom> formList = new LinkedList<ToDoFrom>();
     	formList.add(new ToDoFrom(1,"AML","Technical Task",2,new Date(), new Date(), true));
     	formList.add(new ToDoFrom(1,"Base60AML","Technical Task",2,new Date(), new Date(), true));
+    	System.out.println(request.getSession().getAttribute("user"));
     	request.setAttribute("formlist", formList);
     	if(formList.isEmpty()) {
     		return mapping.findForward(FAILURE);

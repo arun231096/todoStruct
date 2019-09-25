@@ -6,17 +6,34 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login</title>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div style="color:red">
-            <html:errors />
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 form">
+                    <div class="row">
+                        <div class="col-sm-12" align="left">
+                            <h1>Login</h1>
+                        </div>
+                    </div>
+                    <html:form action="/Login">
+                        <div class="form-group"> 
+                            <label>User Name</label>
+				            <html:text name="LoginForm" property="userName" styleClass="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+				             <html:password name="LoginForm" property="password" styleClass="form-control"/>
+                        </div>
+			            <html:submit value="Login" styleClass="btn btn-primary"/>
+			            <a href="signup.jsp">Sign Up</a>
+			        </html:form>      
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
         </div>
-        <html:form action="/Login" styleId="form">
-            User Name : <html:text name="LoginForm" property="userName" /> <br>
-            Password  : <html:password name="LoginForm" property="password" /> <br>
-            <html:submit value="Login" />
-        </html:form>
     </body>
 </html>

@@ -8,6 +8,7 @@
 <struts-config>
     <form-beans>
         <form-bean name="LoginForm" type="com.struct.todo.app.model.LoginForm"/>
+        <form-bean name="SignUpForm" type="com.struct.todo.app.model.SignUpForm"/>
         <form-bean name="ToDoForm" type="com.struct.todo.app.model.ToDoForm"/>
     </form-beans>
     
@@ -21,6 +22,10 @@
             <forward name="success" path="/list.jsp" ></forward>
             <forward name="failure" path="/error.jsp"></forward>
         </action>
-
+        
+        <action input="/signup.jsp" name="SignUpForm" path="/signup" scope="session" type="com.struct.todo.app.controller.SignUpAction">
+            <forward name="success" path="/login.jsp" redirect="false"/>
+            <forward name="failure" path="/failure.jsp" />
+        </action>        
     </action-mappings>
 </struts-config>
