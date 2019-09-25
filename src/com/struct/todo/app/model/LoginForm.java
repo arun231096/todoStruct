@@ -1,10 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package com.struct.todo.app.model;
 
+/**
+ * @author arunkumar.angappan
+ *
+ */
 public class LoginForm extends org.apache.struts.action.ActionForm {
     
 	private static final long serialVersionUID = 5550053846233969863L;

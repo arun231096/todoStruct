@@ -16,6 +16,10 @@ import org.apache.struts.action.ActionMapping;
 import com.struct.todo.app.config.DbConfig;
 import com.struct.todo.app.model.LoginForm;
 
+/**
+ * @author arunkumar.angappan
+ *
+ */
 public class LoginAction extends org.apache.struts.action.Action {
 
     private final static String SUCCESS = "success";

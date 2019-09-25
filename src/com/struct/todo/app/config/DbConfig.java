@@ -4,6 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * @author arunkumar.angappan
+ *
+ */
 public class DbConfig {
 
 	private static String Url = "jdbc:sqlserver://192.168.8.199:1433; databaseName=AML_Training";
