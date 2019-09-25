@@ -21,7 +21,7 @@
     </global-exceptions>
     
     <action-mappings>
-        <action input="/login.jsp" name="LoginForm" path="/Login" scope="session" type="com.struct.todo.app.controller.LoginAction">
+        <action input="/login.jsp" name="LoginForm" path="/Login" type="com.struct.todo.app.controller.LoginAction">
             <forward name="success" path="/list.do" redirect="false"/>
             <forward name="failure" path="/failure.jsp" />
         </action>
@@ -36,7 +36,7 @@
             <forward name="failure" path="/error.jsp"></forward>
         </action>
         
-        <action input="/signup.jsp" name="SignUpForm" path="/signup" scope="session" type="com.struct.todo.app.controller.SignUpAction">
+        <action input="/signup.jsp" name="SignUpForm" path="/signup" type="com.struct.todo.app.controller.SignUpAction">
             <forward name="success" path="/login.jsp" redirect="false"/>
             <forward name="failure" path="/failure.jsp" />
         </action>        
