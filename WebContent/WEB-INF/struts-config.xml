@@ -7,11 +7,11 @@
 
 <struts-config>
     <form-beans>
-        <form-bean name="LoginForm" type="com.struct.todo.app.LoginForm"/>
+        <form-bean name="LoginForm" type="com.struct.todo.app.model.LoginForm"/>
     </form-beans>
     
     <action-mappings>
-        <action input="/login.jsp" name="LoginForm" path="/Login" scope="session" type="com.struct.todo.app.LoginAction">
+        <action input="/login.jsp" name="LoginForm" path="/Login" scope="session" type="com.struct.todo.app.controller.LoginAction">
             <forward name="success" path="/success.jsp" />
             <forward name="failure" path="/failure.jsp" />
         </action>

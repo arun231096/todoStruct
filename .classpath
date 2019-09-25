@@ -17,5 +17,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/sqljdbc4-2.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
