@@ -20,6 +20,18 @@ public class ToDoFrom extends ActionForm{
 	private Date endDate;
 	private boolean status;
 
+	public ToDoFrom() {}
+	public ToDoFrom(long id, String title, String message, long estimation, Date startDate, Date endDate,
+			boolean status) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.message = message;
+		this.estimation = estimation;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.status = status;
+	}
 	public final long getId() {
 		return id;
 	}
